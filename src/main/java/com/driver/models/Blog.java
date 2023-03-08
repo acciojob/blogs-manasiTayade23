@@ -53,11 +53,11 @@ public class Blog {
         this.pubDate = pubDate;
     }
 
-    public Blog(int id, String title, String content, Date pubDate) {
+    public Blog(int id, String title, String content) {
         this.id = id;
         this.title = title;
         this.content = content;
-        this.pubDate = pubDate;
+
     }
     @ManyToOne
     @JoinColumn

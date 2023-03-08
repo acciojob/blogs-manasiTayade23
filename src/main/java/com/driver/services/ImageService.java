@@ -18,10 +18,8 @@ public class ImageService {
 
     public Image addImage(Integer blogId, String description, String dimensions){
         //add an image to the blog
-        Image image=new Image();
-        image.setId(blogId);
-        image.setDescription(description);
-        image.setDimensions(dimensions);
+        Image image=new Image(blogId,description,dimensions);
+
 
         imageRepository2.save(image);
         Blog blog=blogRepository2.findById(blogId).get();
@@ -31,7 +29,7 @@ public class ImageService {
     }
 
     public void deleteImage(Integer id){
-        Image image=imageRepository2.findById(id).get();
+        //Image image=imageRepository2.findById(id).get();
         imageRepository2.deleteById(id);
 
     }

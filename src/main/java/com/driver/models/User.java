@@ -10,8 +10,18 @@ public class User{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String lastname;
-    private String firstname;
+    private String username;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    private String lastname="test";
+    private String firstname="test";
     private String password;
 
     public User(){

@@ -12,5 +12,5 @@ import java.util.List;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Integer> {
-    public void deleteById(int id);
+
 }

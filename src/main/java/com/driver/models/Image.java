@@ -38,8 +38,8 @@ public class Image {
         this.dimensions = dimensions;
     }
 
-    public Image(int id, String description, String dimensions) {
-        this.id = id;
+    public Image(Blog blog, String description, String dimensions) {
+        this.blog = blog;
         this.description = description;
         this.dimensions = dimensions;
     }

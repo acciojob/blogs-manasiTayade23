@@ -53,8 +53,8 @@ public class Blog {
         this.pubDate = pubDate;
     }
 
-    public Blog(int id, String title, String content) {
-        this.id = id;
+    public Blog(User user, String title, String content) {
+        this.user = user;
         this.title = title;
         this.content = content;
 
